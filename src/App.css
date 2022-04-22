@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
+    /* imported fonts */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    html{
+      height: 100% auto;
+    }
+    p,a{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      text-decoration: none;
   }
+ 
+   .w3-button{
+    background-color: #474350;
+    color: white;
+    opacity: 80%;
+    margin-left: 5%;
+  }
+  .w3-button:hover{
+    font-weight: bold;
+  }
+  #hero-container{
+    background: url(/img/me.jpg) no-repeat center center/cover;
+    opacity: 90%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.w3-container__skills{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.w3-container__section{
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.w3-hero-container__body-content{
+  font-size: 2em;
+  font-weight: 700;
+}
+.w3-hero-container__title{
+  font-size:5em;
+}
+.w3-container__title{
+  font-size:3em;
+}
+.w3-container__subtitle{
+  font-size:2em;
+}
+.w3-container__body-content{
+  font-size: 1.5em;
+}
+.w3-container__skills__icons{
+  font-size: 2em; 
+}
+.w3-project-container,.w3-mypictures-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.project__links{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.fa-lg{
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+    
+    
