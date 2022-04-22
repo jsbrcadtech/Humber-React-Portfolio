@@ -12,6 +12,7 @@ import BackgroundDetails from "./components/BackgroundDetails";
 import Education from "./components/Education";
 import Projects from "./routes/Projects";
 import ProjectsDetails from "./components/ProjectDetails";
+import { SkillsProvider } from "./components/SkillsContext";
 
 function App() {
   return (
@@ -19,24 +20,28 @@ function App() {
       <Switch>
         <Route exact path="/">
           <HomePageHeader />
-          <SkillsPromoter />
+          <SkillsProvider>
+            <SkillsPromoter />
+          </SkillsProvider>
           <Footer />
         </Route>
         <Route exact path="/about">
           <Header />
           <Description />
-          <AboutSkills />
+          <SkillsProvider>
+            <AboutSkills />
+          </SkillsProvider>
           <Background />
           <BackgroundDetails />
           <Education />
           <Footer />
         </Route>
         <Route exact path="/projects">
-        <Header />
-        <Projects />
-        <ProjectsDetails />
-        <Footer />
-      </Route>
+          <Header />
+          <Projects />
+          <ProjectsDetails />
+          <Footer />
+        </Route>
       </Switch>
     </BrowserRouter>
   );

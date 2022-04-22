@@ -9,17 +9,17 @@ function EducationDetails() {
     axios
       .get(config.BASE_URL + "/education")
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setEducationDetails(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   }, []);
   return (
     <ul className="w3-ul w3-center">
       {educationDetails.map((education) => (
-        <li>{education.description}</li>
+        <li key = {education.id}>{education.description}</li>
       ))}
     </ul>
   );

@@ -57,12 +57,16 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
-.project__links{
-  font-size: 1.3em;
-  font-weight: bold;
+.footer__details{
+  font-size: 1.2em;
+  font-weight: 700;
 }
-.fa-lg{
-  font-size: 2em;
+
+@media only screen and (max-width: 600px) {
+  .w3-container__skills,.w3-container__skills,.w3-mypictures-container, .w3-project-container{
+    display:block;
+    text-align: center;
+  }
 }
 
 

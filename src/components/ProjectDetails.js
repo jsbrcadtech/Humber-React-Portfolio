@@ -9,11 +9,11 @@ function ProjectsDetails() {
     axios
       .get(config.BASE_URL + "/projects")
       .then((response)=>{
-        console.log(response.data);
+        // console.log(response.data);
         setProjects(response.data);
       })
       .catch((error)=>{
-        console.log(error);
+        // console.log(error);
       })
   },[]);
 
@@ -21,10 +21,10 @@ function ProjectsDetails() {
     <div className="w3-padding-32 w3-project-container">
       {
         projects.map((project)=>(
-          <div className="project__links w3-center">
+          <div className="project__links w3-center" key={project.id}>
             <a href={project.url}>
               <h2 className="w3-center">{project.title}</h2>
-              <img src={project.content} alt="" width="350px" height="300px" className="project-image"></img>
+              <img src={project.content} alt="Web" width="350px" height="300px" className="project-image"></img>
             </a>
           </div>
         ))
