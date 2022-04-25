@@ -1,4 +1,6 @@
 {
-  "BASE_URL_X": "http://localhost/api", 
-  "BASE_URL": "https://justus-humber-laravel-cms.herokuapp.com/api"
+  "BASE_URL_1": "http://localhost/api", 
+  "BASE_URL_2": "https://justus-humber-laravel-cms.herokuapp.com/api",
+  "BASE_URL": "https://cms-humber-santjustus.herokuapp.com/api"
+
 }

@@ -57,6 +57,9 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
+.description{
+  list-style: none;
+}
 .footer__details{
   font-size: 1.2em;
   font-weight: 700;

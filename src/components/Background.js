@@ -2,7 +2,7 @@ import React from "react";
 
 function Background({description}) {
   return (
-    <li>{description}</li>
+    <li className="description">{description}</li>
   );
 }
 
