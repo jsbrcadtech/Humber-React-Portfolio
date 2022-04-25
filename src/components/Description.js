@@ -33,7 +33,7 @@ function Description() {
         {pictures.map((picture) => (
           <div key={picture.id}>
             <img
-              src={picture.description}
+              src={picture.image}
               alt="This is Justus"
               width="310px"
               height="400px"
