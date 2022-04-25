@@ -23,11 +23,11 @@ function Description() {
       </h2>
       <p className="w3-center w3-container__subtitle">
         I'm a curious and resourceful web developper who enjoys learning and
-        executing. I'm switching careers as I have worked in the financial
-        industry for more than 10 years. Web development has always been passion
-        in my life and I'm excited to finally join this programming world
-        professionally. In my spare time, I enjoy playing the guitar and learn
-        more about programming.
+        executing. I also have worked in the financial
+        industry for more than 10 years. Web development has always been a passion
+        in my life and I'm excited to join this programming world
+        professionally. In my spare time, I enjoy playing the guitar, learn
+        more about technology and finance, and spend time wiht family and friends.
       </p>
       <div className="w3-center w3-padding-32 w3-mypictures-container">
         {pictures.map((picture) => (
